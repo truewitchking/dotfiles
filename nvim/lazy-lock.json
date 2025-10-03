@@ -1,0 +1,15 @@
+{
+  "alpha-nvim": { "branch": "main", "commit": "2b3cbcdd980cae1e022409289245053f62fb50f6" },
+  "catppuccin": { "branch": "main", "commit": "c89184526212e04feffbddda9d06b041a8fca416" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "mini.ai": { "branch": "main", "commit": "e0d00c227112e942ed2789dd4c21d651002831c0" },
+  "mini.bracketed": { "branch": "main", "commit": "87cf031b49e3753227f73f433851a6a75cf31445" },
+  "mini.comment": { "branch": "main", "commit": "796eff9194389220c8d89e0303857630adaaf786" },
+  "mini.extra": { "branch": "main", "commit": "647deb1e79d8c871f6eda0572cf0000582487943" },
+  "mini.pairs": { "branch": "main", "commit": "bada72fe4ec607f882a098d15aa4a3279bc6883d" },
+  "mini.pick": { "branch": "main", "commit": "364a239e1c87ce1c4e9355cb7836d99686bb1912" },
+  "mini.statusline": { "branch": "main", "commit": "9968a44b2dad6866615dcd970eac26903d6ed05c" },
+  "mini.surround": { "branch": "main", "commit": "aec6ed2902a2fd809e3c2fe79ee4568791285201" },
+  "nvim-treesitter": { "branch": "main", "commit": "77362027f7aa850c87419fd571151e76b0b342a6" },
+  "oil.nvim": { "branch": "master", "commit": "919e155fdf38e9148cdb5304faaaf53c20d703ea" }
+}
