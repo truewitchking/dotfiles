@@ -2,8 +2,9 @@ local languages = { 'c', 'lua', 'json', 'toml', 'yaml', 'awk', 'bash', 'cmake', 
 
 return {
     'nvim-treesitter/nvim-treesitter',
+    lazy = false,
     branch = 'main',
-    build = 'TSUpdate',
+    build = ':TSUpdate',
     config = function()
         require('nvim-treesitter').install(languages)
 

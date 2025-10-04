@@ -1,8 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-    - /Users/witchking/.config/lazygit
+    - /Users/witchking/.config
 startuppopupversion: 5
-didshowhunkstaginghint: false
+didshowhunkstaginghint: true
 lastversion: 0.55.1
 customcommandshistory: []
 hidecommandlog: true

@@ -5,3 +5,19 @@ vim.api.nvim_create_autocmd("TextYankPost", {
         vim.hl.on_yank()
     end,
 })
+
+vim.api.nvim_create_autocmd("RecordingEnter", {
+    pattern = "*",
+    callback = function()
+        vim.g.macro_recording = "Rec @" .. vim.fn.reg_recording()
+        vim.cmd("redrawstatus")
+    end,
+})
+
+vim.api.nvim_create_autocmd("RecordingLeave", {
+    pattern = "*",
+    callback = function()
+        vim.g.macro_recording = ""
+        vim.cmd("redrawstatus")
+    end,
+})

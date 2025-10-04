@@ -1,5 +1,6 @@
 return {
     "stevearc/oil.nvim",
+    lazy = false,
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {
@@ -19,5 +20,4 @@ return {
     keys = {
         {"<leader>e", "<CMD>Oil<CR>"},
     },
-    lazy = false,
 }
