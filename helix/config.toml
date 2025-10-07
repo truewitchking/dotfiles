@@ -1,0 +1,8 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+mouse = false
+scrolloff = 10
+shell = ["fish", "-c"]
+bufferline = "multiple"
