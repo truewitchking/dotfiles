@@ -1,4 +1,5 @@
-local languages = { 'c', 'lua', 'json', 'toml', 'yaml', 'awk', 'bash', 'cmake', 'cpp', 'css', 'dockerfile', 'fish', 'go', 'gomod', 'gosum', 'json5', 'jsx', 'make', 'markdown', 'php', 'python', 'sql', 'typescript', 'vim', 'xml' }
+local languages = { 'c', 'lua', 'json', 'toml', 'yaml', 'awk', 'bash', 'cmake', 'cpp', 'css', 'dockerfile', 'fish', 'go',
+    'gomod', 'gosum', 'json5', 'jsx', 'make', 'markdown', 'php', 'python', 'sql', 'typescript', 'vim', 'xml' }
 
 return {
     'nvim-treesitter/nvim-treesitter',
