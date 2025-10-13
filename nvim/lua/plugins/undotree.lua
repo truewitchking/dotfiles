@@ -1,9 +1,7 @@
 return {
-    "jiaoshijie/undotree",
-    ---@module 'undotree.collector'
-    ---@type UndoTreeCollector.Opts
+    "mbbill/undotree",
     opts = {},
     keys = {
-        { "<leader>u", "<CMD>lua require('undotree').toggle()<CR>" },
+        { "<leader>u", "<CMD>UndotreeToggle<CR>" },
     },
 }

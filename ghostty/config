@@ -26,4 +26,4 @@ keybind = cmd+v=paste_from_clipboard
 
 theme = "catppuccin-mocha"
 cursor-opacity = .9
-background = "#000000"
+# background = "#000000"
