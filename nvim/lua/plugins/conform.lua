@@ -3,7 +3,9 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-  		},
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+		},
 	},
 	keys = {
 		{ "<leader>rr", '<CMD>lua require("conform").format({lsp_format = "fallback", timeout_ms = 500})<CR>' },
