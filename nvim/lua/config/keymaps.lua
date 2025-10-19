@@ -4,9 +4,9 @@ vim.keymap.set('n', '<leader>q', ':quit<CR>')
 vim.keymap.set('n', '<leader>Q', ':quit!<CR>')
 
 vim.keymap.set('n', '<esc>', ':nohlsearch<CR>')
-vim.keymap.set('n', '<leader>bd', ':bdelete<CR>')
+vim.keymap.set('n', '<leader>bd', ':%bdelete<CR>')
 
--- vim.keymap.set('n', '<leader>ll', ':lua vim.diagnostic.open_float()<CR>')
+vim.keymap.set('n', '<leader>ll', ':lua vim.diagnostic.open_float()<CR>')
 
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>')
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>')

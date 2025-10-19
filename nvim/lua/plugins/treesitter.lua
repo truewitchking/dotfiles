@@ -1,5 +1,31 @@
-local languages = { 'c', 'lua', 'json', 'toml', 'yaml', 'awk', 'bash', 'cmake', 'cpp', 'css', 'dockerfile', 'fish', 'go',
-    'gomod', 'gosum', 'json5', 'jsx', 'make', 'markdown', 'php', 'python', 'sql', 'typescript', 'vim', 'xml', 'lisp' }
+local languages = {
+    'c',
+    'lua',
+    'json',
+    'toml',
+    'yaml',
+    'awk',
+    'bash',
+    'cmake',
+    'cpp',
+    'css',
+    'dockerfile',
+    'fish',
+    'go',
+    'gomod',
+    'gosum',
+    'json5',
+    'jsx',
+    'make',
+    'markdown',
+    'php',
+    'python',
+    'sql',
+    'typescript',
+    'vim',
+    'xml',
+    'lisp',
+}
 
 return {
     'nvim-treesitter/nvim-treesitter',
@@ -21,8 +47,8 @@ return {
                 end
 
                 vim.treesitter.start(buf, language)
-                vim.bo[buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-            end
+                vim.bo[buf].indentexpr = 'v:lua.require\'nvim-treesitter\'.indentexpr()'
+            end,
         })
     end,
 }

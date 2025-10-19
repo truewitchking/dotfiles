@@ -1,7 +1,7 @@
 return {
-    "mbbill/undotree",
-    opts = {},
+    'mbbill/undotree',
+    lazy = false,
     keys = {
-        { "<leader>u", "<CMD>UndotreeToggle<CR>" },
+        { '<leader>u', '<CMD>UndotreeToggle<CR>' },
     },
 }

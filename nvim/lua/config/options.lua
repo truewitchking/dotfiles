@@ -1,16 +1,16 @@
 local o = vim.opt
 local g = vim.g
 
-g.mapleader = " "
-g.maplocalleader = "\\"
+g.mapleader = ' '
+g.maplocalleader = '\\'
 
 o.number = true
 o.relativenumber = true
-o.signcolumn = "yes"
+o.signcolumn = 'yes'
 
-o.mouse = "a"
-o.clipboard = "unnamedplus"
-o.virtualedit = "block"
+o.mouse = 'a'
+o.clipboard = 'unnamedplus'
+o.virtualedit = 'block'
 
 o.undofile = true
 o.swapfile = false
@@ -33,12 +33,12 @@ o.softtabstop = 4
 o.shiftwidth = 4
 
 o.cursorline = true
-o.winborder = "bold"
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+o.winborder = 'bold'
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 o.splitright = true
 o.splitbelow = true
 o.scrolloff = 10
-o.inccommand = "split"
+o.inccommand = 'nosplit'
 o.showmode = true
 o.cmdheight = 0
 o.termguicolors = true
