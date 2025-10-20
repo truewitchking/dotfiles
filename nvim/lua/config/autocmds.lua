@@ -13,7 +13,6 @@ vim.api.nvim_create_autocmd('RecordingEnter', {
         vim.cmd('redrawstatus')
     end,
 })
-
 vim.api.nvim_create_autocmd('RecordingLeave', {
     pattern = '*',
     callback = function()
