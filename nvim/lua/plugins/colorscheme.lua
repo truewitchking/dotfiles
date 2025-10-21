@@ -1,3 +1,10 @@
+-- return {
+--     'EdenEast/nightfox.nvim',
+--     config = function()
+--         vim.cmd.colorscheme('carbonfox')
+--     end,
+-- }
+
 return {
     'zenbones-theme/zenbones.nvim',
     lazy = false,

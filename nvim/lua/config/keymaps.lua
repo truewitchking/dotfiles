@@ -11,4 +11,4 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>')
 
 vim.keymap.set('n', '<leader>ll', ':lua vim.diagnostic.open_float()<CR>')
 
-vim.keymap.set('n', '<leader>p', ':Lazy<CR>')
+vim.keymap.set('n', '<leader>pp', ':Lazy<CR>')
