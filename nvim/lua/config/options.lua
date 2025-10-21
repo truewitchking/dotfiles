@@ -32,6 +32,7 @@ o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 
+o.guicursor = 'a:block'
 o.cursorline = true
 o.winborder = 'bold'
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }

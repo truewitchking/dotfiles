@@ -11,6 +11,7 @@ return {
             { '<leader>fm', '<CMD>Pick marks<CR>' },
             { '<leader>fh', '<CMD>Pick help<CR>' },
             { '<leader>ld', '<CMD>Pick diagnostic<CR>' },
+            { '<leader>ld', '<CMD>Pick diagnostic<CR>' },
         },
     },
     {

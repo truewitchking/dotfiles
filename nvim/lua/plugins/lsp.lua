@@ -1,7 +1,14 @@
 return {
     {
         'j-hui/fidget.nvim',
-        opts = {},
+        opts = {
+            notification = {
+                override_vim_notify = true,
+            },
+        },
+        keys = {
+            { '<leader>hh', '<CMD>Fidget history<CR>' },
+        },
     },
     {
         'mason-org/mason.nvim',
