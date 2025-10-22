@@ -1,0 +1,13 @@
+composer/
+gh/
+helix/runtime/
+helix/themes/
+linearmouse/
+nushell/
+raycast/
+spicetify/
+tmux/plugins/
+zsh/
+katana/
+fish/fish_variables
+cursor/

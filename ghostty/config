@@ -7,7 +7,6 @@ window-decoration = false
 mouse-hide-while-typing = true
 macos-option-as-alt = left
 fullscreen = false
-shell-integration-features = cursor
 
 keybind = clear
 keybind = cmd+q=quit
