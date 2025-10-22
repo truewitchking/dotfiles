@@ -8,7 +8,7 @@ o.number = true
 o.relativenumber = true
 o.signcolumn = 'yes'
 
-o.mouse = 'a'
+o.mouse = ''
 o.clipboard = 'unnamedplus'
 o.virtualedit = 'block'
 
