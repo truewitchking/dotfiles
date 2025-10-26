@@ -1,5 +1,5 @@
-fish_add_path --global --path --move /Users/witchking/.local/bin/
-set -U fish_prompt_pwd_dir_length 0
+fish_add_path -g ~/.local/bin
+
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR nvim
 set -gx PAGER moor
