@@ -1,6 +1,7 @@
 return {
     {
         'j-hui/fidget.nvim',
+        lazy = false,
         opts = {
             notification = { override_vim_notify = true },
         },
@@ -14,13 +15,16 @@ return {
             ensure_installed = {
                 'lua_ls',
                 'stylua',
+
                 'clangd',
                 'rust_analyzer',
+
                 'vtsls',
-                'prettier',
                 'eslint',
+                'tailwindcss',
+
                 'gopls',
-                'shfmt',
+
                 'fish_lsp',
             },
         },
