@@ -2,42 +2,50 @@ return {
     {
         'j-hui/fidget.nvim',
         opts = {
-            notification = {
-                override_vim_notify = true,
-            },
+            notification = { override_vim_notify = true },
         },
         keys = {
             { '<leader>hh', '<CMD>Fidget history<CR>' },
         },
     },
     {
-        'mason-org/mason.nvim',
-        opts = {},
-    },
-    {
         'mason-org/mason-lspconfig.nvim',
-        opts = {},
-    },
-    {
-        'WhoIsSethDaniel/mason-tool-installer.nvim',
         opts = {
             ensure_installed = {
                 'lua_ls',
+                'stylua',
+                'clangd',
+                'rust_analyzer',
+                'vtsls',
+                'prettier',
+                'eslint',
+                'gopls',
+                'shfmt',
+                'fish_lsp',
             },
         },
-    },
-    {
-        'neovim/nvim-lspconfig',
-        config = function()
-            vim.diagnostic.config({
-                virtual_text = {
-                    source = true,
+        dependencies = {
+            {
+                'mason-org/mason.nvim',
+                opts = {},
+                keys = {
+                    { '<leader>pm', '<CMD>Mason<CR>' },
                 },
-                severity_sort = true,
-                float = {
-                    source = true,
-                },
-            })
-        end,
+            },
+            {
+                'neovim/nvim-lspconfig',
+                config = function()
+                    vim.diagnostic.config({
+                        virtual_text = {
+                            source = true,
+                        },
+                        severity_sort = true,
+                        float = {
+                            source = true,
+                        },
+                    })
+                end,
+            },
+        },
     },
 }
