@@ -3,9 +3,8 @@ return {
     lazy = true,
     cmd = {
         'LazyGit',
-        'LazyGitConfig',
-        'LazyGitCurrentFile',
         'LazyGitFilter',
+        'LazyGitCurrentFile',
         'LazyGitFilterCurrentFile',
     },
     dependencies = {
@@ -13,5 +12,8 @@ return {
     },
     keys = {
         { '<leader>gg', '<CMD>LazyGit<CR>' },
+        { '<leader>gF', '<CMD>LazyGitFilter<CR>' },
+        { '<leader>gc', '<CMD>LazyGitCurrentFile<CR>' },
+        { '<leader>gf', '<CMD>LazyGitFilterCurrentFile<CR>' },
     },
 }

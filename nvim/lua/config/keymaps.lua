@@ -1,14 +1,22 @@
-vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set('n', '<leader>w', ':write<CR>')
-vim.keymap.set('n', '<leader>q', ':quit<CR>')
-vim.keymap.set('n', '<leader>Q', ':quit!<CR>')
-vim.keymap.set('n', '<esc>', ':nohlsearch<CR>')
+local set = vim.keymap.set
 
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>')
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>')
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>')
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>')
+set('n', '<leader>o', '<CMD>update<CR> <CMD>source<CR>')
+set('n', '<leader>w', '<CMD>write<CR>')
+set('n', '<leader>q', '<CMD>quit<CR>')
+set('n', '<leader>Q', '<CMD>quit!<CR>')
 
-vim.keymap.set('n', 'gro', ':lua vim.diagnostic.open_float()<CR>')
+set('n', '<esc>', function()
+    if vim.opt.hlsearch:get() then
+        vim.cmd.nohl()
+        return ''
+    else
+        return '<CR>'
+    end
+end, { expr = true })
 
-vim.keymap.set('n', '<leader>pp', ':Lazy<CR>')
+set('n', '<C-h>', '<C-w><C-h>')
+set('n', '<C-l>', '<C-w><C-l>')
+set('n', '<C-j>', '<C-w><C-j>')
+set('n', '<C-k>', '<C-w><C-k>')
+
+set('n', 'gro', ':lua vim.diagnostic.open_float()<CR>')

@@ -15,6 +15,7 @@ local languages = {
     'luap',
     'php',
     'rust',
+    'prolog',
 
     'go',
     'gomod',
@@ -68,4 +69,7 @@ return {
             end,
         })
     end,
+    dependencies = {
+        { 'nvim-treesitter/nvim-treesitter-textobjects', branch = 'main' },
+    },
 }

@@ -3,8 +3,6 @@
 return {
     'stevearc/oil.nvim',
     lazy = false,
-    ---@module 'oil'
-    ---@type oil.SetupOpts
     opts = {
         keymaps = {
             ['q'] = { 'actions.close', mode = 'n' },
@@ -13,6 +11,8 @@ return {
         columns = {
             'permissions',
             'size',
+            'mtime',
+            'icon',
         },
         delete_to_trash = true,
         skip_confirm_for_simple_edits = true,

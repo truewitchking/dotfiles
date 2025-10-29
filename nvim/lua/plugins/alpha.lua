@@ -400,14 +400,14 @@ local bow2 = {
 return {
     'goolord/alpha-nvim',
     config = function()
-        local alpha = require('alpha')
-        local dashboard = require('alpha.themes.dashboard')
+        local alpha = require 'alpha'
+        local dashboard = require 'alpha.themes.dashboard'
         local buttons = {
-            dashboard.button('SPC SPC', 'Grep'),
+            dashboard.button('SPC SPC', 'Live grep'),
             dashboard.button('SPC f f', 'Pick files'),
             dashboard.button('SPC e  ', 'Oil'),
-            dashboard.button('SPC p p', 'Lazy'),
-            dashboard.button('SPC q  ', 'Quit NVIM'),
+            dashboard.button('SPC p l', 'Lazy'),
+            dashboard.button('SPC q  ', 'Quit Neovim'),
         }
         for _, v in ipairs(buttons) do
             v.opts.cursor = -1

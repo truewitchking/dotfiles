@@ -2,12 +2,7 @@ return {
     {
         'j-hui/fidget.nvim',
         lazy = false,
-        opts = {
-            notification = { override_vim_notify = true },
-        },
-        keys = {
-            { '<leader>hh', '<CMD>Fidget history<CR>' },
-        },
+        opts = {},
     },
     {
         'mason-org/mason-lspconfig.nvim',
@@ -39,15 +34,16 @@ return {
             {
                 'neovim/nvim-lspconfig',
                 config = function()
-                    vim.diagnostic.config({
+                    vim.diagnostic.config {
                         virtual_text = {
                             source = true,
                         },
-                        severity_sort = true,
                         float = {
                             source = true,
                         },
-                    })
+                        update_in_insert = false,
+                        severity_sort = true,
+                    }
                 end,
             },
         },

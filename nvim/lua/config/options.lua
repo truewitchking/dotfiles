@@ -1,45 +1,45 @@
-local o = vim.opt
-local g = vim.g
+local opt = vim.opt
+local global = vim.g
 
-g.mapleader = ' '
-g.maplocalleader = '\\'
+global.mapleader = ' '
+global.maploptcalleader = '\\'
 
-o.number = true
-o.relativenumber = true
-o.signcolumn = 'yes'
+opt.number = true
+opt.relativenumber = true
+opt.signcolumn = 'yes'
 
-o.mouse = ''
-o.clipboard = 'unnamedplus'
-o.virtualedit = 'block'
+opt.mouse = ''
+opt.clipboard = 'unnamedplus'
+opt.virtualedit = 'block'
 
-o.undofile = true
-o.swapfile = false
-o.backup = false
-o.writebackup = false
+opt.undofile = true
+opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
 
-o.ignorecase = true
-o.smartcase = true
-o.wrap = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.wrap = true
 
-o.updatetime = 250
-o.timeoutlen = 500
-o.list = true
+opt.updatetime = 250
+opt.timeoutlen = 500
+opt.list = true
 
-o.breakindent = true
-o.autoindent = true
-o.expandtab = true
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
+opt.breakindent = true
+opt.autoindent = true
+opt.expandtab = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
 
-o.guicursor = 'a:block'
-o.cursorline = true
-o.winborder = 'bold'
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-o.splitright = true
-o.splitbelow = true
-o.scrolloff = 10
-o.inccommand = 'nosplit'
-o.showmode = true
-o.cmdheight = 0
-o.termguicolors = true
+opt.guicursor = 'a:block'
+opt.cursorline = true
+opt.winborder = 'bold'
+opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.splitright = true
+opt.splitbelow = true
+opt.scrolloff = 10
+opt.inccommand = 'split'
+opt.showmode = false
+opt.cmdheight = 1
+opt.termguicolors = true

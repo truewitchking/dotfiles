@@ -1,10 +1,8 @@
 return {
-    'zenbones-theme/zenbones.nvim',
+    'vague-theme/vague.nvim',
     lazy = false,
     priority = 1000,
-    dependencies = 'rktjmp/lush.nvim',
     config = function()
-        vim.g.background = 'dark'
-        vim.cmd.colorscheme('zenwritten')
+        vim.cmd.colorscheme 'vague'
     end,
 }
