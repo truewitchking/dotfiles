@@ -2,6 +2,9 @@ return {
     'nvim-mini/mini.nvim',
     version = false,
     config = function()
+        local mini_icons = require 'mini.icons'
+        mini_icons.setup {}
+
         local mini_ai = require 'mini.ai'
         mini_ai.setup {
             n_lines = 100,
@@ -26,14 +29,14 @@ return {
         local mini_comment = require 'mini.comment'
         mini_comment.setup {}
 
+        local mini_bracketed = require 'mini.bracketed'
+        mini_bracketed.setup {}
+
         local mini_pairs = require 'mini.pairs'
         mini_pairs.setup {}
 
         local mini_surround = require 'mini.surround'
         mini_surround.setup {}
-
-        local mini_icons = require 'mini.icons'
-        mini_icons.setup {}
 
         local mini_statusline = require 'mini.statusline'
         mini_statusline.setup {}

@@ -21,6 +21,7 @@ return {
                 'gopls',
 
                 'fish_lsp',
+                'bashls',
             },
         },
         dependencies = {
