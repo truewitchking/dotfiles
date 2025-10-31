@@ -415,7 +415,7 @@ return {
         end
 
         dashboard.section.header.val = hello_kitty4
-        dashboard.section.header.opts.hl = 'CursorLineNr'
+        dashboard.section.header.opts.hl = 'NavicText'
         dashboard.section.buttons.val = buttons
         dashboard.section.buttons.opts.spacing = 0
         alpha.setup(dashboard.opts)
