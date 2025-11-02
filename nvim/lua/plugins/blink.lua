@@ -12,7 +12,7 @@ return {
         'saghen/blink.cmp',
         version = '1.*',
         opts = {
-            keymap = { preset = 'default' },
+            keymap = { preset = 'enter' },
             completion = { documentation = { auto_show = true } },
             sources = {
                 default = { 'lazydev', 'lsp', 'path', 'buffer' },

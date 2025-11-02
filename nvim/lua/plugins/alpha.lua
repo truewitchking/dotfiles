@@ -414,7 +414,7 @@ return {
             v.opts.width = 40
         end
 
-        dashboard.section.header.val = hello_kitty4
+        dashboard.section.header.val = cinnamon
         dashboard.section.header.opts.hl = 'NavicText'
         dashboard.section.buttons.val = buttons
         dashboard.section.buttons.opts.spacing = 0

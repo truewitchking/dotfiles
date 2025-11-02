@@ -26,6 +26,7 @@ local languages = {
     'javascript',
     'jsdoc',
     'jsx',
+    'tsx',
     'html',
     'css',
     'scss',
@@ -71,5 +72,6 @@ return {
     end,
     dependencies = {
         { 'nvim-treesitter/nvim-treesitter-textobjects', branch = 'main' },
+        { 'windwp/nvim-ts-autotag', opts = {}, lazy = false },
     },
 }
