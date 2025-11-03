@@ -2,6 +2,10 @@ return {
     'nvim-mini/mini.nvim',
     version = false,
     config = function()
+        local set = vim.keymap.set
+        local mini_extra = require 'mini.extra'
+        mini_extra.setup {}
+
         local mini_ai = require 'mini.ai'
         mini_ai.setup {
             n_lines = 100,
@@ -45,5 +49,23 @@ return {
 
         local mini_diff = require 'mini.diff'
         mini_diff.setup {}
+
+        local mini_pick = require 'mini.pick'
+        mini_pick.setup {}
+        mini_pick.registry.grep_live_narrow = function()
+            local rg_config_cache = vim.uv.os_getenv 'RIPGREP_CONFIG_PATH' or ''
+            local home = os.getenv 'HOME'
+            vim.uv.os_setenv('RIPGREP_CONFIG_PATH', home .. '/.config/rg/config_narrow')
+            mini_pick.builtin.grep_live { tool = 'rg' }
+            vim.uv.os_setenv('RIPGREP_CONFIG_PATH', rg_config_cache)
+        end
+
+        set('n', '<leader><leader>', '<CMD>Pick grep_live_narrow<CR>')
+        set('n', '<leader>fg', '<CMD>Pick grep_live<CR>')
+        set('n', '<leader>ff', '<CMD>Pick files<CR>')
+        set('n', '<leader>fb', '<CMD>Pick buffers<CR>')
+        set('n', '<leader>fm', '<CMD>Pick marks<CR>')
+        set('n', '<leader>fh', '<CMD>Pick help<CR>')
+        set('n', '<leader>fd', '<CMD>Pick diagnostic<CR>')
     end,
 }
