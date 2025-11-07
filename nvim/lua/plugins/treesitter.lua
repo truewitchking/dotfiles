@@ -1,61 +1,61 @@
-local languages = {
-    'json',
-    'json5',
-    'toml',
-    'yaml',
-    'xml',
-    'markdown',
-    'markdown_inline',
+local ensure_installed = {
+    "json",
+    "json5",
+    "toml",
+    "yaml",
+    "xml",
+    "markdown",
+    "markdown_inline",
 
-    'c',
-    'cpp',
-    'python',
-    'lua',
-    'luadoc',
-    'luap',
-    'php',
-    'rust',
-    'prolog',
+    "c",
+    "cpp",
+    "python",
+    "lua",
+    "luadoc",
+    "luap",
+    "php",
+    "rust",
+    "prolog",
 
-    'go',
-    'gomod',
-    'gosum',
-    'gowork',
+    "go",
+    "gomod",
+    "gosum",
+    "gowork",
 
-    'typescript',
-    'javascript',
-    'jsdoc',
-    'jsx',
-    'tsx',
-    'html',
-    'css',
-    'scss',
+    "typescript",
+    "javascript",
+    "jsdoc",
+    "jsx",
+    "tsx",
+    "html",
+    "css",
+    "scss",
 
-    'bash',
-    'fish',
+    "bash",
+    "fish",
 
-    'sql',
-    'dockerfile',
-    'cmake',
-    'make',
-    'vim',
-    'awk',
-    'editorconfig',
-    'regex',
-    'diff',
-    'query',
+    "sql",
+    "dockerfile",
+    "cmake",
+    "make",
+    "vim",
+    "awk",
+    "editorconfig",
+    "regex",
+    "diff",
+    "query",
 }
 
 return {
-    'nvim-treesitter/nvim-treesitter',
+    "nvim-treesitter/nvim-treesitter",
     lazy = false,
-    branch = 'main',
-    build = ':TSUpdate',
+    branch = "main",
+    build = ":TSUpdate",
     config = function()
-        require('nvim-treesitter').install(languages)
+        require("nvim-treesitter").install(ensure_installed)
 
-        vim.api.nvim_create_autocmd('FileType', {
-            group = vim.api.nvim_create_augroup('treesitter.setup', {}),
+        vim.api.nvim_create_autocmd("FileType", {
+            group = vim.api.nvim_create_augroup("treesitter.setup", {}),
             callback = function(args)
                 local buf = args.buf
                 local filetype = args.match
@@ -66,12 +66,12 @@ return {
                 end
 
                 vim.treesitter.start(buf, language)
-                vim.bo[buf].indentexpr = 'v:lua.require\'nvim-treesitter\'.indentexpr()'
+                vim.bo[buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
             end,
         })
     end,
     dependencies = {
-        { 'nvim-treesitter/nvim-treesitter-textobjects', branch = 'main' },
-        { 'windwp/nvim-ts-autotag', opts = {}, lazy = false },
+        { "nvim-treesitter/nvim-treesitter-textobjects", branch = "main" },
+        { "windwp/nvim-ts-autotag", opts = {}, lazy = false },
     },
 }

@@ -1,11 +1,12 @@
 return {
-    'zenbones-theme/zenbones.nvim',
+    "zenbones-theme/zenbones.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-        vim.cmd.colorscheme 'zenwritten'
+    init = function()
+        vim.g.zenwritten_transparent_background = true
     end,
-    dependencies = {
-        'rktjmp/lush.nvim',
-    },
+    config = function()
+        vim.cmd.colorscheme "zenwritten"
+    end,
+    dependencies = { "rktjmp/lush.nvim" },
 }

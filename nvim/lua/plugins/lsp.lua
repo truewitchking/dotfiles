@@ -1,39 +1,39 @@
 return {
     {
-        'j-hui/fidget.nvim',
+        "j-hui/fidget.nvim",
         lazy = false,
         opts = {},
     },
     {
-        'mason-org/mason-lspconfig.nvim',
+        "mason-org/mason-lspconfig.nvim",
         opts = {
             ensure_installed = {
-                'lua_ls',
-                'stylua',
+                "lua_ls",
+                "stylua",
 
-                'clangd',
-                'rust_analyzer',
+                "clangd",
+                "rust_analyzer",
 
-                'vtsls',
-                'eslint',
-                'tailwindcss',
+                "ts_ls",
+                "eslint",
+                "tailwindcss",
 
-                'gopls',
+                "gopls",
 
-                'fish_lsp',
-                'bashls',
+                "fish_lsp",
+                "bashls",
             },
         },
         dependencies = {
             {
-                'mason-org/mason.nvim',
+                "mason-org/mason.nvim",
                 opts = {},
                 keys = {
-                    { '<leader>pm', '<CMD>Mason<CR>' },
+                    { "<leader>pm", "<CMD>Mason<CR>" },
                 },
             },
             {
-                'neovim/nvim-lspconfig',
+                "neovim/nvim-lspconfig",
                 config = function()
                     vim.diagnostic.config {
                         virtual_text = {

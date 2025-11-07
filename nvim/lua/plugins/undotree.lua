@@ -1,7 +1,10 @@
 return {
     'mbbill/undotree',
     lazy = false,
+    init = function()
+        vim.g.undotree_SetFocusWhenToggle = 1
+    end,
     keys = {
-        { '<leader>u', '<CMD>UndotreeToggle<CR>' },
+        { '<leader>u', vim.cmd.UndotreeToggle },
     },
 }
