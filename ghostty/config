@@ -7,7 +7,9 @@ font-size = 18
 font-feature = -calt, -liga, -dlig
 window-padding-x = 0
 window-padding-y = 0
-# window-decoration = false
+shell-integration = fish
+shell-integration-features = true
+window-decoration = false
 macos-titlebar-style = hidden
 mouse-hide-while-typing = true
 macos-option-as-alt = left
@@ -16,7 +18,7 @@ fullscreen = false
 keybind = clear
 keybind = cmd+q=quit
 keybind = cmd+minus=decrease_font_size:2
-keybind = cmd+equal=increase_font_size:2
+keybind = cmd+equal=increase_font_size:4
 keybind = cmd+zero=reset_font_size
 keybind = cmd+shift+r=reload_config
 keybind = cmd+c=copy_to_clipboard

@@ -46,5 +46,4 @@ opt.cmdheight = 1
 opt.termguicolors = true
 opt.showmode = false
 opt.ruler = false
-opt.showmatch = true
 opt.fillchars = "eob: "

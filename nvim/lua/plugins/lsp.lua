@@ -14,8 +14,7 @@ return {
                 "clangd",
                 "rust_analyzer",
 
-                "ts_ls",
-                "eslint",
+                "vtsls",
                 "tailwindcss",
 
                 "gopls",
