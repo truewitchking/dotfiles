@@ -7,6 +7,23 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "eager"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-opus-4-5-thinking"
+    },
+    "model_parameters": []
+  },
+  "project_panel": {
+    "hide_hidden": false
+  },
   "terminal": {
     "option_as_meta": true,
     "working_directory": "current_project_directory"
@@ -18,7 +35,7 @@
     }
   },
   "soft_wrap": "editor_width",
-  "autosave": "on_window_change",
+  "autosave": "off",
   "base_keymap": "VSCode",
   "ui_font_family": ".ZedSans",
   "use_system_prompts": false,
@@ -39,6 +56,17 @@
   },
   "ui_font_size": 16,
   "buffer_font_size": 16.0,
+  "ui_font_features": {
+    "calt": false
+  },
+  "buffer_font_features": {
+    "calt": false
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    }
+  },
   "theme": {
     "mode": "system",
     "light": "Ayu Dark",

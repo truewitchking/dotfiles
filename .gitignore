@@ -19,3 +19,4 @@ zed/prompts/prompts-library-db.0.mdb
 zed/prompts/prompts-library-db.0.mdb
 fish/conf.d/4_env.fish
 .DS_Store
+ngrok/ngrok.yml
